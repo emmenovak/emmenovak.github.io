@@ -43,11 +43,11 @@ html {
 /* New rulesets */
 footer {
     height: 3em;
-    padding-bottom: 1em;
+    padding: 1em;
 }
 
 footer {
-    padding-bottom: 0em;
+    padding: 0em;
 }
 
 
