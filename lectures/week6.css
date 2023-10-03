@@ -1,0 +1,13 @@
+.box {
+    border: 2px dashed red;
+}
+
+.text {
+    border: 1em dashed blue;
+    padding: 10em;
+    background-color: lightblue;
+   
+}
+/* ems and rems
+/* view width and heigh
+/* percentages
