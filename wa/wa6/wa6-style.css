@@ -1,0 +1,78 @@
+body{
+    width: 110vw;
+    height: 10vw;
+    background-image: url("simoneBiles.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.container{
+    position: absolute;
+    bottom: 100px;
+    left: 750px;
+}
+
+.box1{
+    width: 500px;
+    height: 20px;
+    position: absolute;
+    bottom: 0px;
+    color: aliceblue;
+}
+
+.box2, .box3, .box4{
+    width: 150px;
+    height: 20px;
+    position: absolute;
+    color: aliceblue;
+}
+
+.box1{
+    background-color: #1a759f;
+    right: 200px;
+}
+
+.box1 p{
+    position: fixed;
+    bottom: 85px;
+    left: 446px;
+}
+
+.box2{
+    background-color: #669bbc;
+    right: 200px;
+    bottom: 90px;
+}
+
+.box3{
+    background-color: #669bbc;
+    right: 200px;
+    bottom: 60px;
+}
+
+.box4{
+    background-color: #669bbc;
+    right: 200px;
+    bottom: 30px;
+}
+
+
+.container2{
+    position: absolute;
+    top: 150px;
+    right: 300px;
+}
+
+.box5{
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: aliceblue;
+}
+.box5{
+    background-color: #669bbc;
+    left: 100px;
+}
