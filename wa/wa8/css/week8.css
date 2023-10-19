@@ -57,6 +57,54 @@ h1 {
     transition-delay: 1s;
 }
 
+#box2{
+    background-color: #81b29a;
+    color: #3d405b;
+    transition-duration: 1s;
+}
+
+#box2:hover {
+    background-color: #3d405b;
+    color: #81b29a;
+    transition-delay: 1s;
+}
+
+#box3{
+    background-color: #81b29a;
+    color: #3d405b;
+    transition-duration: 1s;
+}
+
+#box3:hover {
+    background-color: #3d405b;
+    color: #81b29a;
+    transition-delay: 1s;
+}
+
+#box4{
+    background-color: #81b29a;
+    color: #3d405b;
+    transition-duration: 1s;
+}
+
+#box4:hover {
+    background-color: #3d405b;
+    color: #81b29a;
+    transition-delay: 1s;
+}
+
+#box5{
+    background-color: #81b29a;
+    color: #3d405b;
+    transition-duration: 1s;
+}
+
+#box5:hover {
+    background-color: #3d405b;
+    color: #81b29a;
+    transition-delay: 1s;
+}
+
 @keyframes bounce{
     from {
         margin-left: 0%;
