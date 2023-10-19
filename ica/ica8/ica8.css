@@ -1,5 +1,5 @@
 body{
-    background-color: khaki;
+    background-color: palegreen;
 }
 #box1{
     width: 25vw;
@@ -31,4 +31,5 @@ body{
     to {
         margin-left: 0%;
     }
+
 }
