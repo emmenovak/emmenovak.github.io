@@ -1,6 +1,33 @@
 body {
-    background-color: #fff;
+    background-color: beige;
     color: #333;
     margin: 0;
     font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+  }
+
+  nav {
+    background-color: #4895ef;
+    padding: 1em;
+    position: sticky;
+    top: 0%;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  nav a {
+    color: #ffe566;
+    text-decoration: none;
+    padding: .5em 1em;
+
+  }
+
+  img{
+    position: relative;
+    
   }
