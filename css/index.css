@@ -9,16 +9,14 @@ body {
     color: #333;
     margin: 0;
     font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
-    
   }
 
 /** Navigation Bar **/
 nav{
-    height: 50vh;
+    height: 6vh;
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height:50px;
     background-color: #4895ef;
     position: sticky;
     top: 0%;
@@ -26,13 +24,10 @@ nav{
     flex-basis: content;
 }
 nav a{
-    width:20vw;
+    width: 15vw;
     text-align: center;
     text-decoration: none;
     color:#ffd166;
-    font-family: Arial, Helvetica, sans-serif;
-    position: sticky;
-    top: 0%;
 }
 
 /** Implement hover color change/transition to nav bar **/
@@ -41,7 +36,6 @@ nav a{
   color: #ffd166;
   transition-duration: 0.5s;
 }
-
 #box1:hover {
   background-color: #ffd166;
   color: #4895ef;
@@ -52,7 +46,6 @@ nav a{
   color: #ffd166;
   transition-duration: 0.5s;
 }
-
 #box2:hover {
   background-color: #ffd166;
   color: #4895ef;
@@ -63,7 +56,6 @@ nav a{
   color: #ffd166;
   transition-duration: 0.5s;
 }
-
 #box3:hover {
   background-color: #ffd166;
   color: #4895ef;
@@ -74,7 +66,6 @@ nav a{
   color: #ffd166;
   transition-duration: 0.5s;
 }
-
 #box4:hover {
   background-color: #ffd166;
   color: #4895ef;
@@ -85,7 +76,6 @@ nav a{
   color: #ffd166;
   transition-duration: 0.5s;
 }
-
 #box5:hover {
   background-color: #ffd166;
   color: #4895ef;
@@ -95,7 +85,7 @@ nav a{
 /** Opening Image **/
 img{
   width: 100vw;
-  height: 45vw;
+  height: 75vh;
   position: relative;
   margin: auto;
 }
@@ -106,26 +96,27 @@ img{
   font-family: 'Archivo Black', sans-serif;
 }
 
+/** Main Description **/
 .description {
   width: 85vw;
   height: 15vh;
   margin: auto;
   display: flex;
-  margin-bottom: 15px;
+  margin-bottom: 3vw;
   border: solid #4895ef 5px;
   flex-basis: content;
   
 }
+
+/** Description Hover Color Change **/
 #color1{
   background-color: white;
   transition-duration: 0.5s;
 }
-
 #color1:hover {
   background-color: #4895ef;
   transition-delay: 0.5s;
 }
-
 
 
 /** Concert **/
@@ -137,29 +128,31 @@ img{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-bottom: 10px;
+  margin-bottom: 2vw;
 }
 
-/** Body Grid of date and text  padding top line hight**/
-.main {
-  width: 90%;
+/** Main info on Concert **/
+.text {
+  width: 90vw;
   background-color: #ffd166;
   color: #333;
 }
 
+/** Date of Concert **/
 .date {
-  width: 100px;
-  height: 100px;
+  width: 8vw;
+  height: 12vh;
   text-align: center;
   background-color: #ffd166;
   color: #4895ef;
 }
-
 .date p{
-  line-height: 10px;
+  line-height: 10vw;
 }
 
-/** Media**/
+
+
+/** Media Quiery **/
 @media screen and (max-width: 400px){
 
   nav{
@@ -169,6 +162,7 @@ img{
     height: 30vw;
   }
   img{
+    flex-direction: column;
     width: 150%;
     height: 50%;
   }
@@ -179,12 +173,12 @@ img{
   .date{
     padding-bottom: 50%;
   }
-  .main{
+  .text{
     padding-top: 10%;
   }
 
   
-  .concert, main, article, .description{
+  .concert, text, article, .description{
     flex-direction: column;
     height: 100vw;
     margin: auto;
