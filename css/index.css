@@ -10,7 +10,9 @@ body {
     margin: 0;
     font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
   }
-
+p,h1,h2,h3{
+  padding: 5px;
+}
 /** Navigation Bar **/
 nav{
     height: 6vh;
@@ -29,6 +31,7 @@ nav a{
     text-align: center;
     text-decoration: none;
     color:#ffd166;
+    line-height: 2.8vw;
 }
 
 /** Implement hover color change/transition to nav bar **/
@@ -91,6 +94,19 @@ img{
   position: relative;
   margin: auto;
 }
+.parallax {
+  /* The image used */
+  background-image: url("declanAlbum.jpg");
+
+  /* Set a specific height */
+  min-height: 100vh;
+  
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /** Title **/
  article h1{
@@ -129,7 +145,8 @@ img{
   align-items: center;
   justify-content: space-evenly;
   margin-bottom: 2vw;
-  padding: 2vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
 }
 
 /** Main info on Concert **/
@@ -164,6 +181,14 @@ img{
   }
   nav a{
     width: 80vw;
+    padding: 3px;
+  }
+
+  .parallax {
+    background-image: url("declanScreen.png");
+    background-attachment: scroll;
+    background-size: 100% 50%;
+    background-color: #4895ef;
   }
 
   .concert{
