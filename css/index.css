@@ -13,6 +13,16 @@ body {
 p,h1,h2,h3{
   padding: 5px;
 }
+
+/**Fonts**/
+/**Fonts**/
+h1{
+  font-family: 'Titan One', sans-serif;
+}
+h2{
+  font-family: 'Roboto Slab', serif;
+}
+
 /** Navigation Bar **/
 nav{
     height: 6vh;
@@ -111,7 +121,6 @@ img{
 /** Title **/
  article h1{
   text-align: center;
-  font-family: 'Archivo Black', sans-serif;
 }
 
 /** Main Description **/
