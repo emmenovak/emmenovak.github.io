@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button{
+            font-family: 'Courier New', Courier, monospace;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-align: center;
+            border: 2px solid rgba(5, 78, 8, 0.6);
+            background-color: rgba(203, 104, 10, 0.6);
+            color: rgb(100 0 0 / 1);
+            box-shadow: 1px 1px 2px rgba(0, 200, 200, 0.4);
+            border-radius: 10px;
+            padding: 3px 10px;
+            cursor: pointer;
+            height: 100px;
+            width: 150px;
+            position: absolute;
+            top:45px;
+            left: 50px 
+        }
+        div {
+            font-family: 'Courier New', Courier, monospace;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-align: center;
+            border: 2px solid rgba(5, 78, 8, 0.6);
+            background-color: rgba(203, 104, 10, 0.6);
+            color: rgb(100 0 0 / 1);
+            box-shadow: 1px 1px 2px rgba(0, 200, 200, 0.4);
+            border-radius: 10px;
+            padding: 3px 10px;
+            cursor: pointer;
+            height: 90px;
+            width: 200px;
+            position: absolute;
+            top:450px;
+            left:50px     
+        }
+    </style>
+</head>
+<body>
+    <button type="button">Insert Username Here</button>
+    <div id="press">Press me!</div>
+
+    <script>
+        // variables defined using 'const' or 'let'
+        const button = document.querySelector("button");
+        const press = document.getElementById("press");
+ 
+        button.addEventListener('click', updateName);
+        press.addEventListener('click', changeBackground);
+ 
+        function updateName() {
+            let name = prompt("Enter a new name");
+            button.textContent = `Hi my name is: ${name}`;
+        }
+        function changeBackground() {
+            press.textContent=`HAPPY HALLOWEEN`;
+            document.body.style.background = `url(ica10image.webp)`;
+        }
+        
+    </script>
+    
+</body>
+</html>
