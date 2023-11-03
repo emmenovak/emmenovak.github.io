@@ -12,7 +12,7 @@ function randomValueFromArray(array){
 // variables to declare
 let storyText = "Once upon a time, on a hot 97 fahrenheit day, :insertx: decided to go exploring. When they got to :inserty:, they stared in awe for a few moments, then :insertz:. Bob saw the whole thing, since it was their intention — :insertx: weighed 30 pounds, and it was a hot day. They continued their excursion looking for their next victim and said :insertv:"
 const insertX = ["Gerald the Seal", "Minnie Mouse", "Little Bow Peep"]
-const insertY = ["the Roayal Ball", "the Micky Mouse Club House", "Ohio"]
+const insertY = ["the Royal Ball", "the Micky Mouse Club House", "Ohio"]
 const insertZ = ["skyrocketed to the moon", "fell into a bottomless pit", "turned into a singing mole rat"]
 const insertV = ["Slay!", "Cool beans!", "Howdy!"]
 
