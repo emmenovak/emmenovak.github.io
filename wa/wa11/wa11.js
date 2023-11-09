@@ -33,14 +33,14 @@ for (let imgFileName of imagesArrayOfFileNames) {
 
 /* Wiring up the Darken/Lighten button */
 btn.addEventListener('click', () => {
-if(btn.getAttribute("class") === ("Dark")) 
-{
-    btn.setAttribute("class", "Light");
-    btn.textContent = "Lighten";
-    overlay.style.backgroundColor = "rgba(0,0,0,0.5)";
-} else{
-    btn.setAttribute("class", "Dark");
-    btn.textContent = "Darken";
-    overlay.style.backgroundColor = "rgba(0,0,0,0)";
-}
+    if(btn.getAttribute("class") === "Dark") 
+    {
+        btn.setAttribute("class", "Light");
+        btn.textContent = "Lighten";
+        overlay.style.backgroundColor = "rgba(0,0,0,0.5)";
+    } else{
+        btn.setAttribute("class", "Dark");
+        btn.textContent = "Darken";
+        overlay.style.backgroundColor = "rgba(255,255,255,0.5)";
+    }
 });
