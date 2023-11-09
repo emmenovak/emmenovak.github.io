@@ -5,14 +5,14 @@ const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
-const imagesArrayOfFileNames = ['images/pic1.jpg', 'images/pic2.jpg', 'images/pic3.jpg', 'images/pic4.jpg', 'images/pic5.jpg']
+const imagesArrayOfFileNames = ['images/picture1.jpg', 'images/picture2.jpg', 'images/picture3.jpg', 'images/picture4.jpg', 'images/picture5.jpg']
 
 const imageAltText = new Object()
-imageAltText.name1 = 'Close up of Human eye'
-imageAltText.name2 = 'Textured Rock'
-imageAltText.name3 = 'Purple Flowers'
-imageAltText.name4 = 'Egyptian Art'
-imageAltText.name5 = 'Butterfly on Leaf'
+imageAltText.name1 = 'Oranges'
+imageAltText.name2 = 'Sun in Sand'
+imageAltText.name3 = 'Fruits'
+imageAltText.name4 = 'Cat in Sun'
+imageAltText.name5 = 'Blue Moped'
 
 
 /* Looping through images */
