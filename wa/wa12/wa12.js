@@ -1,6 +1,6 @@
-const quoteButton = document.querySelector('.generate').addEventListener('click', getQuote);
+const quoteButton = document.querySelector('#js-fact').addEventListener('click', getQuote);
 
-const factTxt = document.querySelector('.generate');
+const factTxt = document.querySelector('#js-fact-text');
 
 const endpoint = 'https://catfact.ninja/fact';
 

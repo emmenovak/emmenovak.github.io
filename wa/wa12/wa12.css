@@ -29,7 +29,7 @@ html {
   img{
     position: relative;
     width: 100%;
-    height: 50%;
+    height: 30%;
   }
 
   header {
@@ -69,17 +69,18 @@ html {
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
   }
   
-  .generate {
+  
+  .fact {
     background-color: #84a59d;
     text-decoration: none;
   }
   
-  .generate:hover {
-    background-color: #84a59d;
+  .fact:hover {
+    background-color: #909181;
   }
   
-  .new-cat-btn {
-    background-color: #f2cc8f;
+  .new-cat-btn  {
+    background-color: #4A2B0F;
     margin-bottom: 15px;
   }
   
