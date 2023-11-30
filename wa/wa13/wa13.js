@@ -89,13 +89,6 @@ const company3 = {
             "designation": "Executive",
             "salary": 21300,
             "raiseEligible": false
-        },
-        {
-            "firstName": "Anna",
-            "department": "Tech",
-            "designation": "Executive",
-            "salary": 25600,
-            "raiseEligible": false
         }
     ]
 };
@@ -125,7 +118,7 @@ console.log(salaryTotal);
 
 // Probelm 5
 for(let i = 0; i < company3.employeeList.length; i++) {
-   if(company3.employeeList[i]['raiseEligible']){
+   if(company3.employeeList[i]['raiseEligible'] == true){
     company3.employeeList[i]['salary'] += company3.employeeList[i]['salary'] * .1;
     company3.employeeList[i]['raiseEligible'] = false;
 
