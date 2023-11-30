@@ -1,33 +1,41 @@
 // Assignment 13: Human Resources
 
 // Q1
-employees = {
 {
-    "first_name";"Sam",
-    "department"; "Tech",
-    "designation"; "Manager",
-    "salary"; "40000",
-    "raise_eligible"; "true"
-}
-{
-    "first_name";"Mary",
-    "department"; "Finance",
-    "designation"; "Trainee",
-    "salary"; "18500",
-    "raise_eligible"; "true"
-}
-{
-    "first_name";"Bill",
-    "department"; "HR",
-    "designation"; "Executive",
-    "salary"; "21200",
-    "raise_eligible"; "false"
-}
-    
-
-};
+    "employees";[
+    {
+        "firstName":"Sam", 
+        "department":"Tech",
+        "designation": "Manager",
+        "salary":"40000",
+        "raiseEligible":"true"
+    },
+    {
+        "firstName":"Mary",
+        "department": "Finance",
+        "designation": "Trainee",
+        "salary": "18500",
+        "raiseEligible": "true"
+    },
+    {
+        "firstName":"Bill",
+        "department": "HR",
+        "designation": "Executive",
+        "salary": "21300",
+        "raiseEligible": "false"}
+    ]
+    }
 
 // Q2
+{
+    "company";[
+        {
+            "companyName":"Tech Stars",
+            "website":"www.techstars.site",
+            "employees":["employees"]
+        }
+    ]
+}
 
 // Q3
 
