@@ -1,7 +1,7 @@
 // Assignment 13: Human Resources
 
 // Problem 1
-const employeeName = {
+const company1 = {
     "employees":[
         {
             "firstName": "Sam", 
@@ -21,17 +21,17 @@ const employeeName = {
             "firstName": "Bill",
             "department": "HR",
             "designation": "Executive",
-            "salary": 21300,
+            "salary": 21200,
             "raiseEligible": false
         }
     ]
 };
 console.log("Question 1");
-console.log(employeeName);
+console.log(company1);
 
 
 // Problem 2
-const companyName = {
+const company2 = {
     "company":[
         {
             "companyName": "Tech Stars",
@@ -55,7 +55,7 @@ const companyName = {
                     "firstName": "Bill",
                     "department": "HR",
                     "designation": "Executive",
-                    "salary": 21300,
+                    "salary": 21200,
                     "raiseEligible": false
                 }
             ]
@@ -63,7 +63,7 @@ const companyName = {
     ]
 };
 console.log("Question 2");
-console.log(companyName);
+console.log(company2);
 
 
 // Problem 3
@@ -87,7 +87,7 @@ const company3 = {
             "firstName": "Bill",
             "department": "HR",
             "designation": "Executive",
-            "salary": 21300,
+            "salary": 21200,
             "raiseEligible": false
         }
     ]
@@ -103,6 +103,7 @@ function addEmployee (obj, name, dep, des, sal, raise) {
     obj['employeeList'].push(employee);
 }
 addEmployee(company3, "Anna", "Tech", "Executive", 25600, false);
+
 console.log("Question 3");
 console.log(company3);
 
@@ -110,8 +111,9 @@ console.log(company3);
 // Probelm 4
 let salaryTotal = 0;
 for(let i = 0; i < company3.employeeList.length; i++) {
-    salaryTotal +=  company3.employeeList[i]['salary'];
+    salaryTotal += company3.employeeList[i]['salary'];
 };
+
 console.log("Question 4");
 console.log(salaryTotal);
 
@@ -121,7 +123,6 @@ for(let i = 0; i < company3.employeeList.length; i++) {
    if(company3.employeeList[i]['raiseEligible'] == true){
     company3.employeeList[i]['salary'] += company3.employeeList[i]['salary'] * .1;
     company3.employeeList[i]['raiseEligible'] = false;
-
    }
 };
 
@@ -139,7 +140,6 @@ for(let i = 0; i < company3.employeeList.length; i++){
             company3.employeeList[i]['wfh'] = false;
         }
     }
-
 }
 
 console.log("Question 6")
