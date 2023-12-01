@@ -131,39 +131,6 @@ console.log(company3);
 
 
 // Problem 6
-const company4 = {
-    "employeeList":[
-        {
-            "firstName": "Sam", 
-            "department": "Tech",
-            "designation": "Manager",
-            "salary": 40000,
-            "raiseEligible": true
-        },
-        {
-            "firstName": "Mary",
-            "department": "Finance",
-            "designation": "Trainee",
-            "salary": 18500,
-            "raiseEligible": true
-        },
-        {
-            "firstName": "Bill",
-            "department": "HR",
-            "designation": "Executive",
-            "salary": 21200,
-            "raiseEligible": false
-        },
-        {
-            "firstName": "Anna",
-            "department": "Tech",
-            "designation": "Executive",
-            "salary": 25600,
-            "raiseEligible": false
-        }
-    ]
-};
-
 let arr = ['Anna', 'Sam'];
 for(let i = 0; i < company3.employeeList.length; i++){
     for(let j = 0; j < arr.length; j++){
@@ -176,4 +143,4 @@ for(let i = 0; i < company3.employeeList.length; i++){
 }
 
 console.log("Question 6")
-console.log(company4)
+console.log(company3)
