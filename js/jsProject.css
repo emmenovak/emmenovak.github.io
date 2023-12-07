@@ -29,7 +29,7 @@ input[type=text]
     width: 1200px;
     height: 100px;
     padding: 10px;
-    border: 5px solid #BEE5E5;
+    border: 5px solid #bde0fe;
     margin-top: 10px;
     text-align: center;
     margin-left: auto;
@@ -37,7 +37,7 @@ input[type=text]
     
 }
 
-#key_cont
+#position
 {
     margin-top: 25px; 
     width: 450px;
@@ -47,21 +47,21 @@ input[type=text]
     margin-right: auto;
 }
 
-.letter
+.pos
 {
     width: 100px;
     height: 100px;
     text-align:center;
     padding: 5px;
     margin: 5px;
-    border: 5px solid gray;
+    border: 5px solid #bde0fe;
     float: left;
     cursor: pointer;
     border-radius: 15px;
     font-size: 40px;
 }
 
-.letter:hover
+.pos:hover
 {
     background-color: #222222;
     color: white;
@@ -71,4 +71,17 @@ input[type=text]
 
 #number11:active {     
     background-color:86A3A3;    
+}
+
+.location{
+    flex-direction: row;
+    font-size: 35px;
+    width: 1200px;
+    height: 100px;
+    padding: 10px;
+    border: 5px solid #bde0fe;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: auto;
 }

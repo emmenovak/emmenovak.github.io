@@ -1,4 +1,3 @@
-
 let numbers = new Array(11);
 numbers[0] = "1";
 numbers[1] = "2";
@@ -13,21 +12,8 @@ numbers[9] = "-";
 numbers[10] = "0";
 numbers[11] = "Enter";
 
-
-let letter = new Array(11);
-letter[0] = "o_o";
-letter[1] = "abc";
-letter[2] = "def";
-letter[3] = "ghi";
-letter[4] = "jkl";
-letter[5] = "mno";
-letter[6] = "pqrs";
-letter[7] = "tuv";
-letter[8] = "wxyz";
-letter[9] = "+";
-letter[10] = "_";
-letter[11] = "&#8593;";
-
+// array of position
+let postion = new Array(9);
 
 let text = "";
 let counter = 0;
@@ -44,15 +30,20 @@ function start()
     for (i=0; i<=11; i++)
     {
         let element = "number" + i;
-        div_content = div_content + '<div class="letter" onclick="run('+i+')" id="'+element+'">'+numbers[i]+'<br>'+letter[i]+'</div>';
+        div_content = div_content + '<div class="pos" onclick="run('+i+')" id="'+element+'">'+numbers[i]+'<br>'+'</div>';
         if ((i+1) % 3 ==0) div_content = div_content + '<div style="clear:both;"></div>';
     }
     
-    document.getElementById("key_cont").innerHTML = div_content;
+    document.getElementById("position").innerHTML = div_content;
     
 
 }
 
+function random(min, max) {
+    const num = Math.floor(Math.random() * (max - min + 1)) + min;
+    return num;
+  }
+counter = Math.floor(Math.random(0,location.length));
 //////////////////////////////////////////////////////////////////////Operating Script//////////////////////////////////////////////////
 
 //function run will be activated when any of the div-button will be pressed, nr function argument will indicate which of the button has been pressed.
@@ -72,489 +63,79 @@ function run(nr) {
 //one to check the counter ( to check which letter need to be displayed )
 //the second one is to check if the capital letter button is clicked, if yes, all the next letters will be Capital letter till will not be deactivated.
 
-    switch (nr) {
+switch (nr) {
   case 0:
-    counter ++;
-    
-        if(counter >= 6) {
-        
-        counter = 1;
-        text = text.toString().replace(/.$/,".");
-        document.getElementById("screen").value = text;
-        //return counter;
-    }
-    else {
-        if (counter % 3 == 0) {
-            text = text.toString().replace(/.$/,"?");
-            document.getElementById("screen").value = text;
-        }
-        
-        else if (counter % 4 == 0){
-            text = text.toString().replace(/.$/,"!");
-            document.getElementById("screen").value = text;
-        }
-        
-        else if (counter % 5 == 0){
-            text = text.toString().replace(/.$/,"'");
-            document.getElementById("screen").value = text;
-        }
-        
-        else if (counter % 2 == 0) {
-            text = text.toString().replace(/.$/,",");
-            document.getElementById("screen").value = text;
-        }
-        
-        else {
-            text += "1";
-            document.getElementById("screen").value = text;
-            
-        }
-    }
-    
+    counter = Math.floor(Math.random(0,postion.length));
+    text += "1";
+    //in HTML make 10 locations, splitting "screen" into different spots
+    document.getElementById("loc0").value = text;
     break;
     
   case 1:
-    counter ++;
-    
-        if(counter >= 4) {
-            if( clicked == true ) {
-                counter = 1;
-                text = text.toString().replace(/.$/,"A");
-                document.getElementById("screen").value = text;
-            }
-            else {
-                counter = 1;
-                text = text.toString().replace(/.$/,"a");
-                document.getElementById("screen").value = text;
-            }
-    }
-    else {
-        if (counter % 3 == 0) {
-            if( clicked == true ) {
-                text = text.toString().replace(/.$/,"C");
-                document.getElementById("screen").value = text;
-            }
-            else {
-                text = text.toString().replace(/.$/,"c");
-                document.getElementById("screen").value = text;
-            }
-        }
-        else if (counter % 2 == 0) {
-            if( clicked == true ) {
-                text = text.toString().replace(/.$/,"B");
-                document.getElementById("screen").value = text;
-            }
-            else {
-                text = text.toString().replace(/.$/,"b");
-                document.getElementById("screen").value = text;
-            }
-        }
-        else {
-            if( clicked == true ) {
-                text += "2";
-                document.getElementById("screen").value = text;
-            }
-            else {
-                text += "2";
-                document.getElementById("screen").value = text;
-            }
-        }
-    }
+    counter = Math.floor(Math.random(0,postion.length));
+    text += "2";
+    document.getElementById("loc1").value = text;
     break;
+
   case 2:
-     counter ++;
-     
-        if(counter >= 4) {
-            if( clicked == true ) {
-                counter = 1;
-                text = text.toString().replace(/.$/,"D");
-                document.getElementById("screen").value = text;
-            }
-            else {
-                counter = 1;
-                text = text.toString().replace(/.$/,"d");
-                document.getElementById("screen").value = text;
-            }
-        
-    }
-    else {
-        if (counter % 3 == 0) {
-            if( clicked == true ) {
-                text = text.toString().replace(/.$/,"F");
-                document.getElementById("screen").value = text;
-            }
-            else {
-                text = text.toString().replace(/.$/,"f");
-                document.getElementById("screen").value = text;
-            }
-        }
-        else if (counter % 2 == 0) {
-            if( clicked == true ) {
-                text = text.toString().replace(/.$/,"E");
-                document.getElementById("screen").value = text;
-            }
-            else {
-                text = text.toString().replace(/.$/,"e");
-                document.getElementById("screen").value = text;
-            }
-        }
-        else {
-            if( clicked == true ) {
-                text += "3";
-                document.getElementById("screen").value = text;
-            }
-            else {
-                text += "3";
-                document.getElementById("screen").value = text;
-            }
-        }
-    }
+    counter = Math.floor(Math.random(0,postion.length));
+    text += "3";
+    document.getElementById("loc2").value = text;
     break;
+
   case 3:
-    counter ++;
-    
-        if(counter >= 4) {
-            if( clicked == true ) {
-                counter = 1;
-                text = text.toString().replace(/.$/,"G");
-                document.getElementById("screen").value = text;
-            }
-            else {
-                counter = 1;
-                text = text.toString().replace(/.$/,"g");
-                document.getElementById("screen").value = text;
-            }
-    }
-    else {
-        if (counter % 3 == 0) {
-            if( clicked == true ) {
-                text = text.toString().replace(/.$/,"I");
-                document.getElementById("screen").value = text;
-            }
-            else {
-                text = text.toString().replace(/.$/,"i");
-                document.getElementById("screen").value = text;
-            }
-        }
-        else if (counter % 2 == 0) {
-            if( clicked == true ) {
-                text = text.toString().replace(/.$/,"H");
-                document.getElementById("screen").value = text;
-            }
-            else {
-                text = text.toString().replace(/.$/,"h");
-                document.getElementById("screen").value = text;
-            }
-        }
-        else {
-            if( clicked == true ) {
-                text += "4";
-                document.getElementById("screen").value = text;
-            }
-            else {
-                text += "4";
-                document.getElementById("screen").value = text;
-            }
-        }
-    }
+    counter = Math.floor(Math.random(0,postion.length));
+    text += "4";
+    document.getElementById("loc3").value = text;
     break;
+
   case 4:
-    counter ++;
-    
-        if(counter >= 4) {
-            if( clicked == true ) {
-                counter = 1;
-                text = text.toString().replace(/.$/,"J");
-                document.getElementById("screen").value = text;
-            }
-            else {
-                counter = 1;
-                text = text.toString().replace(/.$/,"j");
-                document.getElementById("screen").value = text;
-            }
-    }
-    else {
-        if (counter % 3 == 0) {
-            if( clicked == true ) {
-                text = text.toString().replace(/.$/,"L");
-                document.getElementById("screen").value = text;
-            }
-            else {
-                text = text.toString().replace(/.$/,"l");
-                document.getElementById("screen").value = text;
-            }
-        }
-        else if (counter % 2 == 0) {
-            if( clicked == true ) {
-                text = text.toString().replace(/.$/,"K");
-                document.getElementById("screen").value = text;
-            }
-            else {
-                text = text.toString().replace(/.$/,"k");
-                document.getElementById("screen").value = text;
-            }
-        }
-        else {
-            if( clicked == true ) {
-                text += "5";
-                document.getElementById("screen").value = text;
-            }
-            else {
-                text += "5";
-                document.getElementById("screen").value = text;
-            }
-        }
-    }
+    counter = Math.floor(Math.random(0,postion.length));
+    text += "5";
+    document.getElementById("loc4").value = text;
     break;
+
   case 5:
-    counter ++;
-    
-        if(counter >= 4) {
-            if( clicked == true ) {
-                counter = 1;
-                text = text.toString().replace(/.$/,"M");
-                document.getElementById("screen").value = text;
-            }
-            else {
-                counter = 1;
-                text = text.toString().replace(/.$/,"m");
-                document.getElementById("screen").value = text;
-            }
-    }
-    else {
-        if (counter % 3 == 0) {
-            if( clicked == true ) {
-                text = text.toString().replace(/.$/,"O");
-                document.getElementById("screen").value = text;
-            }
-            else {
-                text = text.toString().replace(/.$/,"o");
-                document.getElementById("screen").value = text;
-            }
-        }
-        else if (counter % 2 == 0) {
-            if( clicked == true ) {
-                text = text.toString().replace(/.$/,"N");
-                document.getElementById("screen").value = text;
-            }
-            else {
-                text = text.toString().replace(/.$/,"n");
-                document.getElementById("screen").value = text;
-            }
-        }
-        else {
-            if( clicked == true ) {
-                text += "6";
-                document.getElementById("screen").value = text;
-            }
-            else {
-                text += "6";
-                document.getElementById("screen").value = text;
-            }
-        }
-    }
+    counter = Math.floor(Math.random(0,postion.length));
+    text += "6";
+    document.getElementById("loc5").value = text;
     break;
+
   case 6:
-    counter ++;
-    
-        if(counter >= 5) {
-            if( clicked == true ) {
-                counter = 1;
-                text = text.toString().replace(/.$/,"P");
-                document.getElementById("screen").value = text;
-            }
-            else {
-                counter = 1;
-                text = text.toString().replace(/.$/,"p");
-                document.getElementById("screen").value = text;
-            }
-    }
-    else {
-        if (counter % 3 == 0) {
-            if( clicked == true ) {
-                text = text.toString().replace(/.$/,"R");
-                document.getElementById("screen").value = text;
-            }
-            else {
-                text = text.toString().replace(/.$/,"r");
-                document.getElementById("screen").value = text;
-            }
-        }
-        
-        else if (counter % 4 == 0){
-            if( clicked == true ) {
-                text = text.toString().replace(/.$/,"S");
-                document.getElementById("screen").value = text;
-            }
-            else {
-                text = text.toString().replace(/.$/,"s");
-                document.getElementById("screen").value = text;
-            }
-        }
-        
-        else if (counter % 2 == 0) {
-            if( clicked == true ) {
-                text = text.toString().replace(/.$/,"Q");
-                document.getElementById("screen").value = text;
-            }
-            else {
-                text = text.toString().replace(/.$/,"q");
-                document.getElementById("screen").value = text;
-            }
-        }
-        
-        else {
-            if( clicked == true ) {
-                text += "7";
-                document.getElementById("screen").value = text;
-            }
-            else {
-                text += "7";
-                document.getElementById("screen").value = text;
-            }
-            
-        }
-    }
+    counter = Math.floor(Math.random(0,postion.length));
+    text += "7";
+    document.getElementById("loc6").value = text;
     break;
+
   case 7:
-    counter ++;
-    
-        if(counter >= 4) {
-            if( clicked == true ) {
-                counter = 1;
-                text = text.toString().replace(/.$/,"T");
-                document.getElementById("screen").value = text;
-            }
-            else {
-                counter = 1;
-                text = text.toString().replace(/.$/,"t");
-                document.getElementById("screen").value = text;
-            }
-    }
-    else {
-        if (counter % 3 == 0) {
-            if( clicked == true ) {
-                text = text.toString().replace(/.$/,"V");
-                document.getElementById("screen").value = text;
-            }
-            else {
-                text = text.toString().replace(/.$/,"v");
-                document.getElementById("screen").value = text;
-            }
-        }
-        else if (counter % 2 == 0) {
-            if( clicked == true ) {
-                text = text.toString().replace(/.$/,"U");
-                document.getElementById("screen").value = text;
-            }
-            else {
-                text = text.toString().replace(/.$/,"u");
-                document.getElementById("screen").value = text;
-            }
-        }
-        else {
-            if( clicked == true ) {
-                text += "8";
-                document.getElementById("screen").value = text;
-            }
-            else {
-                text += "8";
-                document.getElementById("screen").value = text;
-            }
-        }
-    }
+    counter = Math.floor(Math.random(0,postion.length));
+    text += "8";
+    document.getElementById("loc7").value = text;
     break;
+
   case 8:
-    counter ++;
-    
-        if(counter >= 5) {
-            if( clicked == true ) {
-                counter = 1;
-                text = text.toString().replace(/.$/,"W");
-                document.getElementById("screen").value = text;
-            }
-            else {
-                counter = 1;
-                text = text.toString().replace(/.$/,"w");
-                document.getElementById("screen").value = text;
-            }
-    }
-    else {
-        if (counter % 3 == 0) {
-            if( clicked == true ) {
-                text = text.toString().replace(/.$/,"Y");
-                document.getElementById("screen").value = text;
-            }
-            else {
-                text = text.toString().replace(/.$/,"y");
-                document.getElementById("screen").value = text;
-            }
-        }
-        
-        else if (counter % 4 == 0){
-            if( clicked == true ) {
-                text = text.toString().replace(/.$/,"Z");
-                document.getElementById("screen").value = text;
-            }
-            else {
-                text = text.toString().replace(/.$/,"z");
-                document.getElementById("screen").value = text;
-            }
-        }
-        
-        else if (counter % 2 == 0) {
-            if( clicked == true ) {
-                text = text.toString().replace(/.$/,"X");
-                document.getElementById("screen").value = text;
-            }
-            else {
-                text = text.toString().replace(/.$/,"x");
-                document.getElementById("screen").value = text;
-            }
-        }
-        
-        else {
-            if( clicked == true ) {
-                text += "9";
-                document.getElementById("screen").value = text;
-            }
-            else {
-                text += "9";
-                document.getElementById("screen").value = text;
-            }
-            
-        }
-    }
+    counter = Math.floor(Math.random(0,postion.length));
+    text += "9";
+    document.getElementById("loc8").value = text;
     break;
   case 9:
     counter ++;
-    
-    if(counter >= Math.random() === 1) {
-        text += "-";
-        document.getElementById("screen").value = text;
-    } else{
-        text += "+"
-        document.getElementById("screen").value = text;
+    if( clicked == true ) {
+        text += " - ";
+        document.getElementById(" ").value = text;
     }
-    
     break;
+
   case 10:
-    counter ++;
-    
-    if(counter >= 1) {
-        text += " ";
-        document.getElementById("screen").value = text;
-    }
-    
+    counter = Math.floor(Math.random(0,postion.length));
+    text += "0";
+    document.getElementById("loc9").value = text;
     break;
+    
   case 11:
-    counter ++;
-        if (clicked == true ) {
-            clicked = false;
-        }
-        else {
-            clicked = true;
-        }
+    text = "Your Phone Number is incorrect";
+    document.getElementById("screen").value = text;
+
     break;
     
     
@@ -575,23 +156,10 @@ function choiseAndReset() {
 //console.log(clicked);
 }
 
+// how to code randomized counter each time someone clicks
 
+// is pos array correct
 
-/**function createPhoneNumber(numbers){
-    let firstpart = ""
-    let secondpart = ""
-    let thirdpart = ""
-    for(var i=0;i<numbers.length;i++){
-      if(i<3){
-        firstpart.concat(numbers[i].toString())
-      } else if(3<i<6){
-        secondpart.concat(numbers[i].toString())
-      } else if(i>=6){
-        thirdpart.concat(numbers[i].toString())
-      }
-    }
-    return `(${firstpart} ${secondpart}-${thirdpart}`
-}
+// click isnt working
 
-createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
-**/
+// how to code enter button to show "answer"
