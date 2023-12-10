@@ -1,3 +1,84 @@
+body{
+    background-color: #253B3B;
+    color: white;
+}
+.container{
+    width: 1200px;
+    height: 100px;
+    padding: 2px;
+    border: 5px solid #bde0fe;
+
+}
+.numberLocations{
+    display: flex;
+    flex-direction: row;
+    
+    background-color: white;
+    margin-top: 15px;
+    text-align: center;
+   
+    
+}
+
+.location{
+    width: 50px;
+    height: 50px;
+ 
+    background-color: white;
+    color: #979797;
+    font-size: 35px;
+
+
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.numberButtons{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+    
+}
+
+.press{
+    margin-top: 25px; 
+    width: 450px;
+    text-align: center;
+    min-height: 280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.press:hover
+{
+    background-color: #222222;
+    color: white;
+    border: 5px solid white;
+}
+
+.button{
+    background-color: grey;
+    color: white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+
+    width: 100px;
+    height: 100px;
+    text-align:center;
+    padding: 5px;
+    margin: 5px;
+    border: 5px solid #bde0fe;
+    float: left;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 40px;
+}
+
+/**
 body {
     background-color: #253B3B;
     color: white;
@@ -74,14 +155,24 @@ input[type=text]
 }
 
 .location{
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     font-size: 35px;
     width: 1200px;
     height: 100px;
     padding: 10px;
     border: 5px solid #bde0fe;
-    margin-top: 10px;
+    margin: 0;
     text-align: center;
-    margin-left: 100px;
-    margin-right: auto;
+
+    position: absolute;
+    top: 1%;
+    left: .8%;
+   
+   
 }
+#loc0, #loc1, #loc2{
+    width: 20px;
+    height: 20px;
+}
+*/

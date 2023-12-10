@@ -1,3 +1,23 @@
+const buttons = document.querySelectorAll('.button');
+let indexArray = [0,1,2,3,4,5,6,7,8,9]
+
+for(let i = 0; i < buttons.length; i++){
+    buttons[i].addEventListener('click', () => {
+        //let random = Math.floor(Math.random() * 9);
+        let random = Math.floor(Math.random() * indexArray.length);
+        let randomIndex = indexArray[random];
+        let location = document.getElementById(`loc${randomIndex}`);
+        //let location = document.getElementById(`loc${random}`);
+        indexArray.splice(random, 1);
+        if(i == 9){
+            location.textContent = 0;
+        } else {
+            location.textContent = i + 1;
+        }
+    });
+}
+
+/** 
 let numbers = new Array(11);
 numbers[0] = "1";
 numbers[1] = "2";
@@ -13,7 +33,7 @@ numbers[10] = "0";
 numbers[11] = "Enter";
 
 // array of position
-let postion = new Array(9);
+let position = new Array(9);
 
 let text = "";
 let counter = 0;
@@ -64,76 +84,74 @@ function run(nr) {
 //the second one is to check if the capital letter button is clicked, if yes, all the next letters will be Capital letter till will not be deactivated.
 
 switch (nr) {
+
   case 0:
-    counter = Math.floor(Math.random(0,postion.length));
+    counter = Math.floor(Math.random(0,position.length));
     text += "1";
     //in HTML make 10 locations, splitting "screen" into different spots
-    document.getElementById("loc0").value = text;
+    document.getElementById(`loc${counter}`).value = text;
     break;
     
   case 1:
-    counter = Math.floor(Math.random(0,postion.length));
+    counter = Math.floor(Math.random(0,position.length));
     text += "2";
     document.getElementById("loc1").value = text;
     break;
 
   case 2:
-    counter = Math.floor(Math.random(0,postion.length));
+    counter = Math.floor(Math.random(0,position.length));
     text += "3";
     document.getElementById("loc2").value = text;
     break;
 
   case 3:
-    counter = Math.floor(Math.random(0,postion.length));
+    counter = Math.floor(Math.random(0,position.length));
     text += "4";
     document.getElementById("loc3").value = text;
     break;
 
   case 4:
-    counter = Math.floor(Math.random(0,postion.length));
+    counter = Math.floor(Math.random(0,position.length));
     text += "5";
     document.getElementById("loc4").value = text;
     break;
 
   case 5:
-    counter = Math.floor(Math.random(0,postion.length));
+    counter = Math.floor(Math.random(0,position.length));
     text += "6";
     document.getElementById("loc5").value = text;
     break;
 
   case 6:
-    counter = Math.floor(Math.random(0,postion.length));
+    counter = Math.floor(Math.random(0,position.length));
     text += "7";
     document.getElementById("loc6").value = text;
     break;
 
   case 7:
-    counter = Math.floor(Math.random(0,postion.length));
+    counter = Math.floor(Math.random(0,position.length));
     text += "8";
     document.getElementById("loc7").value = text;
     break;
 
   case 8:
-    counter = Math.floor(Math.random(0,postion.length));
+    counter = Math.floor(Math.random(0,position.length));
     text += "9";
     document.getElementById("loc8").value = text;
     break;
   case 9:
-    counter ++;
-    if( clicked == true ) {
-        text += " - ";
-        document.getElementById(" ").value = text;
-    }
+    text += " - ";
+    document.getElementById("space").value = text;
     break;
 
   case 10:
-    counter = Math.floor(Math.random(0,postion.length));
+    counter = Math.floor(Math.random(0,position.length));
     text += "0";
     document.getElementById("loc9").value = text;
     break;
     
   case 11:
-    text = "Your Phone Number is incorrect";
+    text = "Your Phone Number is Incorrect";
     document.getElementById("screen").value = text;
 
     break;
@@ -156,10 +174,7 @@ function choiseAndReset() {
 //console.log(clicked);
 }
 
-// how to code randomized counter each time someone clicks
-
-// is pos array correct
-
-// click isnt working
-
-// how to code enter button to show "answer"
+// Get help on:
+// how to make location array in the screen input box
+// deletes postion each time?
+// what to do after they press enter? reset */
