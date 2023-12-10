@@ -17,6 +17,16 @@ for(let i = 0; i < buttons.length; i++){
     });
 }
 
+
+let string = 'Error'
+
+function handleClick(event){
+  event.preventDefault();
+  let notifDiv = document.getElementById("enter");
+  notifDiv.innerHTML = string
+}
+
+document.getElementById("enter").addEventListener("click", handleClick)
 /** 
 let numbers = new Array(11);
 numbers[0] = "1";
