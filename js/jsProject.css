@@ -86,6 +86,14 @@ body{
     font-size: 40px;
     
 }
+
+.clear{
+    margin: auto;
+    margin-right: 10%;
+    display: flex;
+    justify-content: right;
+    font-size: 20px;
+}
 /**
 body {
     background-color: #253B3B;
