@@ -94,6 +94,12 @@ body{
     justify-content: right;
     font-size: 20px;
 }
+p{
+    color: #979797;
+    font-size: 30px;
+    text-align: center;
+
+}
 /**
 body {
     background-color: #253B3B;
