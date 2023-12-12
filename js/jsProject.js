@@ -30,8 +30,6 @@ document.getElementById("enter").addEventListener("click", handleClick)
 
 
 
-document.getElementsByClassName('send:after')[0].addEventListener("click", myPopupFunction);
-
-function myPopupFunction() {
-  alert('Hey, you clicked on my button!')
-}
+function showAlert() {
+    alert ("Your phone number is invalid");
+  }
