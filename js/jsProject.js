@@ -18,7 +18,7 @@ for(let i=0;i< buttons.length;i++){
 }
 
 
-let string = 'Error'
+let string = 'Error!'
 
 function handleClick(event){
   event.preventDefault();
@@ -27,3 +27,11 @@ function handleClick(event){
 }
 
 document.getElementById("enter").addEventListener("click", handleClick)
+
+
+
+document.getElementsByClassName('send:after')[0].addEventListener("click", myPopupFunction);
+
+function myPopupFunction() {
+  alert('Hey, you clicked on my button!')
+}
