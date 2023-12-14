@@ -88,113 +88,38 @@ body{
 }
 
 .clear{
+    
     margin: auto;
     margin-right: 7%;
     display: flex;
     justify-content: right;
     font-size: 20px;
-}
-p{
-    color: #bde0fe;
-    font-size: 30px;
-    text-align: center;
 
-}
-/**
-body {
+
     background-color: #253B3B;
     color: white;
-}
-
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-
-p {
-    font-size: 35px;
-}
-#screen {
-    width: 1000px;
-    height: 60px;
-    position: relative;
-    bottom: 20px;
-}
-
-input[type=text]
-{
-    color: #979797;
-    font-size: 35px;
-}
-
-#display {
-    width: 1200px;
-    height: 100px;
-    padding: 10px;
-    border: 5px solid #bde0fe;
-    margin-top: 10px;
+    width: 70px;
+    height: 45px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+
     
-}
-
-#position
-{
-    margin-top: 25px; 
-    width: 450px;
-    text-align: center;
-    min-height: 280px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.pos
-{
-    width: 100px;
-    height: 100px;
-    text-align:center;
-    padding: 5px;
-    margin: 5px;
+    padding: 7px;
     border: 5px solid #bde0fe;
-    float: left;
     cursor: pointer;
     border-radius: 15px;
-    font-size: 40px;
+  
 }
-
-.pos:hover
+.clear:hover
 {
     background-color: #222222;
     color: white;
     border: 5px solid white;
 }
 
-
-#number11:active {     
-    background-color:86A3A3;    
-}
-
-.location{
-    display: flex;
-    flex-direction: column;
-    font-size: 35px;
-    width: 1200px;
-    height: 100px;
-    padding: 10px;
-    border: 5px solid #bde0fe;
-    margin: 0;
+p{
+    color: #bde0fe;
+    font-size: 30px;
     text-align: center;
+    margin-right: 3%;
 
-    position: absolute;
-    top: 1%;
-    left: .8%;
-   
-   
 }
-#loc0, #loc1, #loc2{
-    width: 20px;
-    height: 20px;
-}
-*/

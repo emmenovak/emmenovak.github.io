@@ -19,17 +19,29 @@ for(let i=0;i< buttons.length;i++){
 
 
 let string = 'Error!'
-
 function handleClick(event){
   event.preventDefault();
   let notifDiv = document.getElementById("enter");
   notifDiv.innerHTML = string
 }
-
 document.getElementById("enter").addEventListener("click", handleClick)
 
 
 
 function showAlert() {
-    alert ("Your phone number is invalid");
-  }
+    const numbers = document.querySelectorAll('.location');
+    let str = "";
+    let count = 0;
+    
+    for(let i = 0; i < numbers.length; i++){
+        if(numbers[i].textContent != "" && numbers[i].textContent != " - "){
+            count++;
+        }
+        str += numbers[i].textContent;
+    }
+    if(count < 10){
+        alert("Your phone number is invalid");
+    } else{
+        alert ("Your phone number is " + str);
+    }
+}
